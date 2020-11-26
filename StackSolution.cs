@@ -43,15 +43,6 @@ namespace AlgoAndDs
             return _leftBracket.Contains(bracketString);
         }
 
-        public int[] TwoSum(int[] nums, int target)
-        {
-            int[] result = new int[2];
-            var dict = new Dictionary<int, int>();
-
-            for (int i = 0; i < nums.Length; i++)
-            { 
-                int val = dict.TryGetValue(target-nums[i], in)
-            }
-        }
+      
     }
 }
