@@ -8,7 +8,8 @@ namespace AlgoAndDs
     {
        private readonly Dictionary<char, char> _reverseBrackets;
        private static readonly string _leftBracket = "{[(<";
-       public StackSolution()
+       private static readonly string _rightBracket = "}])>";
+        public StackSolution()
        {
            _reverseBrackets = new Dictionary<char, char>()
            {
@@ -20,8 +21,8 @@ namespace AlgoAndDs
         }
         public bool IsValidBracket(string bracketString)
         {
-            var brackets = new Stack<char>();
-           
+            var brackets = new System.Collections.Generic.Stack<char>();
+         
             foreach (var bracket in bracketString)
             {
                 if (IsLeftBracket(bracket))
@@ -34,6 +35,7 @@ namespace AlgoAndDs
             return brackets.Count == 0;
         }
 
+       
         public char GetReversedBrackets(char bracket)
         {
             return _reverseBrackets[bracket];
@@ -42,7 +44,10 @@ namespace AlgoAndDs
         {
             return _leftBracket.Contains(bracketString);
         }
+        public bool IsRightBracket(char bracketString)
+        {
+            return _rightBracket.Contains(bracketString);
+        }
 
-      
     }
 }

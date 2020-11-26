@@ -6,13 +6,10 @@ namespace AlgoAndDs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            if(new StackSolution().IsValidBracket("(()))"))
-                Console.WriteLine("valid");
-            else
-            {
-                Console.WriteLine("Not valid");
-            }
+         
+            Console.WriteLine(new StackSolution().IsValidBracket("(())") ? "valid" : "Not valid");
+
+        
         }
     }
 }

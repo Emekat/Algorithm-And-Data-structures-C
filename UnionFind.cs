@@ -135,9 +135,9 @@ namespace AlgoAndDs
             return numOfComponents; //this does path compression
         }
 
-        public void Unify(int p, int q)
-        {
-            int root1
-        }
+        //public void Unify(int p, int q)
+        //{
+        //    int root1
+        //}
     }
 }
